@@ -3,7 +3,7 @@ feature "Homepage" do
     visit '/'
 
     expect(page).to have_content("Sign up")
-    expect(page).to have_content("Log in")
+    expect(page).to have_button("Log in")
     expect(page).to have_content("InstaJam")
   end
 
