@@ -1,5 +1,8 @@
 # README
 
+Setup
+*  bundle install, rails generate rspec:install (bin/spring stop to fix error)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
