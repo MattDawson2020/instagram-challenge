@@ -22,7 +22,7 @@ class JamsController < ApplicationController
   end
 
   def index
-    @jams = Jam.all
+    @jams = Jam.all.order(created_at: :desc)
   end
 
   def like
