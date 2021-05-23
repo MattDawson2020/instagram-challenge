@@ -4,6 +4,18 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def edit
+  end
+
+  def update
+    if @user.update(user_params)
+      redirect_to @user
+    else
+      flash[:error] = "Unable to edit user"
+      redirect_to @user
+    end
+  end
+
   def create 
     @user = User.create(user_params)
     if @user.valid?
@@ -22,6 +34,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password)
+    params.require(:user).permit(:name, :email, :password, :image)
   end
 end

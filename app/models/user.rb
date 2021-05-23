@@ -1,6 +1,7 @@
 class User < ApplicationRecord
 
   has_secure_password 
+  has_one_attached :image
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 

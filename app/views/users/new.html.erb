@@ -1,14 +1,5 @@
+<h3> Create a new user <h3>
+
+<%= render 'form' %>
 
 
-<div>
-  <%= form_for @user do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-    <%= f.label :password %>
-    <%= f.password_field :password %> 
-
-    <%= f.submit "Create user" %>
-  <% end %>
-</div>
