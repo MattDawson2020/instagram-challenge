@@ -1,0 +1,11 @@
+
+<div>
+  <%= form_for @jam do |f| %>
+    <%= f.label :image, "Image" %>
+    <%= f.file_field :image, class: "form-control" %> 
+    <%= f.label :caption %>
+    <%= f.text_field :caption %> 
+
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>

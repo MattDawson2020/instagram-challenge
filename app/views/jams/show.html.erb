@@ -1,0 +1,19 @@
+
+<p>
+  <% user = User.find(@jam.user_id) %>
+  <%= "Posted by #{@jam.user.name}!"%>
+  <br>
+  <%= image_tag @jam.image, style: "width: 200px;" %>
+  <br>
+  <%= @jam.caption %>
+</p>
+
+<div>
+  <%= link_to "Edit Jam", edit_jam_path(@jam) %>
+</div>
+<br>
+
+<div>
+  <%= link_to "See other Jams", jams_path %>
+</div>
+
