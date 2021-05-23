@@ -16,3 +16,17 @@ def log_in
   fill_in "Password", with: "password"
   click_button "Log in"
 end
+
+def create_jam
+  click_link "Create a new Jam"
+  fill_in "Caption", with: "Suprise!"
+  attach_file "Image", "app/assets/images/louise.jpeg"
+  click_button "Submit"
+end
+
+def create_second_jam
+  click_link "Create a new Jam"
+  fill_in "Caption", with: "Do you think horses get songs stuck in their heads?"
+  attach_file "Image", "app/assets/images/tina.jpeg"
+  click_button "Submit"
+end

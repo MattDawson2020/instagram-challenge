@@ -1,0 +1,13 @@
+<% @jams.each do |jam| %>
+  <p>
+    <% user = User.find(jam.user_id) %>
+    <%= "Posted by #{jam.user.name}!"%>
+    <br>
+    <%= image_tag jam.image, style: "width: 200px;" %>
+    <br>
+    <%= jam.caption %>
+  </p>
+  <%= link_to "See this Jam", jam_path(jam) %>
+  <br>
+
+<% end %>

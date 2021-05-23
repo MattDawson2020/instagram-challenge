@@ -7,7 +7,6 @@ class JamsController < ApplicationController
   def create
     @user = User.find(session[:user_id])
     @jam = @user.jams.create(jam_params)
-    p @jam
     if @jam.valid?
       redirect_to jam_path(@jam.id)
       flash[:newuser] = "You have created a new post #{@user.name}!"
