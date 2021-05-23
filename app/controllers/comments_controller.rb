@@ -19,15 +19,7 @@ class CommentsController < ApplicationController
       end
   
     end
-  
-    # def show 
-    #   @jam = Jam.find(params[:id])
-    # end
-  
-    # def index
-    #   @comments = Comment.all
-    # end
-  
+
   
     private 
   

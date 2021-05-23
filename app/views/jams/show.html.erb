@@ -10,6 +10,11 @@
     <p> <%= "#{comment.body}--#{user.name}"%></p>
   <% end %>
 </p>
+<div>
+  <%= button_to "Like", like_path(@jam.id), method: "put" %>
+  <%= @jam.likes %> <%= @jam.likes == 1 ? "Like" : "Likes" %>
+</div>
+
 
 <div>
   <%= link_to "Add Comment", new_comment_path(@jam) %>

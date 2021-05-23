@@ -25,6 +25,11 @@ class JamsController < ApplicationController
     @jams = Jam.all
   end
 
+  def like
+    Jam.like(params[:id])
+    redirect_to jam_url(params[:id])
+  end
+
 
   private 
 

@@ -1,4 +1,4 @@
-feature "Creating james" do
+feature "Creating jams" do
   scenario "a user can post a picture" do
     sign_up
     log_in

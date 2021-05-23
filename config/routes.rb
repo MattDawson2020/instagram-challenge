@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   resources :jams
   resources :comments
+  put '/jam/:id/like', to: 'jams#like', as: 'like'
 end
