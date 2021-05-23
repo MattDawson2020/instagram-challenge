@@ -57,14 +57,16 @@ Setup:
 * Why not make it even easier for yourself and just click the Heroku link at the top?
 
 
+
 Successes
 -----
-
-* 
+* Challenge requirements managed without much issue or blockers
+* Successfully used active storage, rails generators and other more advanced features for the first time
+* Was able to push to heroku without much issue
 
 ------------------
 
 To improve
 -----
-* 
+* Left bootstrap and styling till the end, and while attempting to set it up encounted SEVERE git issues that ultimately required two hours to make the app work again, and meant I had to abandon styling and leave the project incomplete. I intend to come back and do it again after the course.
 
