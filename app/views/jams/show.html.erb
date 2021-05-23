@@ -6,7 +6,15 @@
   <%= image_tag @jam.image, style: "width: 200px;" %>
   <br>
   <%= @jam.caption %>
+  <% @jam.comments.each do |comment| %>
+    <p> <%= "#{comment.body}--#{user.name}"%></p>
+  <% end %>
 </p>
+
+<div>
+  <%= link_to "Add Comment", new_comment_path(@jam) %>
+</div>
+<br>
 
 <div>
   <%= link_to "Edit Jam", edit_jam_path(@jam) %>

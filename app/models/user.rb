@@ -3,6 +3,7 @@ class User < ApplicationRecord
   has_secure_password 
   has_one_attached :image
   has_many :jams
+  has_many :comments
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
