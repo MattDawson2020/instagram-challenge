@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
 
     def new
       @comment = Comment.new
-      @jam = Jam.find_by(params[:jam_id])
+      @jam = Jam.find_by(id: params[:format])
     end
   
     def create
